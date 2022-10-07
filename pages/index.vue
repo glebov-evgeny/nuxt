@@ -1,10 +1,10 @@
 <template>
   <div class="wrapper">
     <s-header />
-    <main>
+    <main class="main">
       <p>title</p>
     </main>
-    <footer><p>Footer</p></footer>
+    <s-footer />
   </div>
 </template>
 
