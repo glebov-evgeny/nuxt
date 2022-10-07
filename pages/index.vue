@@ -1,12 +1,17 @@
 <template>
-  <div class="container">
-    <div>
-      <h1 class="s-why-title">Тест</h1>
-      <SWhy />
-    </div>
+  <div class="wrapper">
+    <s-header />
+    <main>
+      <p>title</p>
+    </main>
+    <footer><p>Footer</p></footer>
   </div>
 </template>
 
 <script>
-export default {};
+export default {
+  data() {
+    return {};
+  },
+};
 </script>
