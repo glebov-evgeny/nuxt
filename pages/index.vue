@@ -1,11 +1,7 @@
 <template>
-  <div class="wrapper">
-    <s-header />
-    <main class="main">
-      <s-main-info />
-    </main>
-    <s-footer />
-  </div>
+  <main class="main">
+    <s-main-info />
+  </main>
 </template>
 
 <script>
