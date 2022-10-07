@@ -33,12 +33,6 @@ a {
   width: rem(8);
 }
 
-:root {
-  --layout-width: 90rem; // 1380px
-  --layout-h-padding: 1.875rem; // 30px
-  --s-v-padding: 3.75rem; // 60px
-}
-
 #__nuxt,
 #__layout,
 #__layout > div:only-child {
@@ -48,6 +42,7 @@ a {
   align-items: stretch;
   width: 100%;
 }
+
 .main {
-  min-height: 100vh;
+  min-height: calc(100vh - rem(50));
 }

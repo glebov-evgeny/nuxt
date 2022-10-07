@@ -2,11 +2,11 @@
 
 .s-header {
   position: fixed;
-  z-index: 3;
+  z-index: 50;
   top: 0;
   left: 0;
   width: 100%;
-  padding: rem(20) 0;
-  background-color: #e5ffb5;
-  opacity: 0.3;
+  min-height: rem(50);
+  padding: rem(10) 0;
+  background-color: var(--color-yellow);
 }

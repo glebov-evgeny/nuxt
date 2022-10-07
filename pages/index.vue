@@ -2,7 +2,7 @@
   <div class="wrapper">
     <s-header />
     <main class="main">
-      <p>title</p>
+      <s-main-info />
     </main>
     <s-footer />
   </div>
