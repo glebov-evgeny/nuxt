@@ -1,7 +1,8 @@
 <template>
   <div class="container">
     <div>
-      <h1 class="title">Тест</h1>
+      <h1 class="s-why-title">Тест</h1>
+      <SWhy />
     </div>
   </div>
 </template>

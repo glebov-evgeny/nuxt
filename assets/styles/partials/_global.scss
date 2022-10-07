@@ -1,5 +1,5 @@
 body {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 a {
@@ -13,42 +13,7 @@ a {
   --layout-v-padding: 3.75rem; // 60px
 }
 
-.l-default,
-.l-wide {
-  max-width: var(--layout-width);
-  margin: 0 auto;
-}
-
-.l-default {
-  @media all and (max-width: 1399px) {
-    padding: 0 var(--layout-padding);
-  }
-  @media all and (max-width: 1199px) {
-    --layout-padding: 1.875rem; // 30px
-    --layout-v-padding: 2.5rem; // 40px
-  }
-  @media all and (max-width: 767px) {
-    --layout-padding: 1rem; // 16px
-    --layout-v-padding: 2rem; // 32px
-  }
-}
-
-.l-wide {
-  --layout-width: 96.25rem; // 1540px
-  --layout-padding: 1.875rem; // 30px
-
-  padding: 0 var(--layout-padding);
-
-  @media all and (max-width: 767px) {
-    --layout-padding: 1rem; // 16px
-  }
-}
-
 .container {
-  padding: 1rem 10rem;
-  background: rgb(240, 225, 64);
-}
-
-.title {
-  color: rgb(36, 216, 36);
+  padding: 1rem;
+  background: rgb(233, 233, 233);
 }
