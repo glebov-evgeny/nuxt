@@ -13,7 +13,8 @@
     "lint": "yarn prettier & yarn lint:js & yarn lint:style",
     "test": "jest",
     "prepare": "husky install",
-    "pre-commit": "lint-staged"
+    "pre-commit": "lint-staged",
+    "deploy": "push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
     "@nuxtjs/axios": "^5.13.1",
@@ -56,6 +57,7 @@
     "prettier": "^2.2.1",
     "pug": "^3.0.2",
     "pug-plain-loader": "^1.1.0",
+    "push-dir": "^0.4.1",
     "sass": "^1.40.1",
     "sass-loader": "^10.1.1",
     "stylelint": "^13.12.0",
@@ -78,7 +80,13 @@
   "lint-staged": {
     "**/*.css": "stylelint",
     "**/*.scss": "stylelint --syntax=scss --fix",
-    "**/*": ["prettier --write", "git add ."],
-    "**/*.{vue,js,jsx,tsx,ts}": ["eslint --fix --quiet", "git add ."]
+    "**/*": [
+      "prettier --write",
+      "git add ."
+    ],
+    "**/*.{vue,js,jsx,tsx,ts}": [
+      "eslint --fix --quiet",
+      "git add ."
+    ]
   }
 }

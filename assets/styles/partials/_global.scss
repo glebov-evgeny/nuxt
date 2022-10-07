@@ -43,6 +43,7 @@ a {
 #__layout,
 #__layout > div:only-child {
   display: flex;
+  flex-direction: column;
   flex: 1;
   align-items: stretch;
   width: 100%;
