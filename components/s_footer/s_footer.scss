@@ -1,6 +1,7 @@
 @import '@/assets/styles/tools/mixins';
 
 .s-footer {
+  min-height: rem(50);
   padding: 1rem;
-  background: #ccc;
+  background: rgba(211, 90, 90, 0.5);
 }

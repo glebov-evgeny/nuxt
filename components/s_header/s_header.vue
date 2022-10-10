@@ -1,6 +1,10 @@
 <template>
   <header class="s-header" ref="header" id="header">
-    <p>Хэдер</p>
+    <nav>
+      <NuxtLink to="/">Главная</NuxtLink>
+      <NuxtLink to="/about">О компании</NuxtLink>
+      <NuxtLink to="/users">Пользователи</NuxtLink>
+    </nav>
   </header>
 </template>
 
