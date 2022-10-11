@@ -45,5 +45,15 @@ a {
 
 .main {
   min-height: calc(100vh - rem(50));
-  padding: rem(50) 0 rem(25);
+  padding: rem(60) 0 rem(25);
+}
+
+.wrapper {
+  max-width: rem(1600);
+  margin: 0 auto;
+}
+.container {
+  max-width: rem(1600);
+  margin: 0 auto;
+  padding: 0 1rem;
 }

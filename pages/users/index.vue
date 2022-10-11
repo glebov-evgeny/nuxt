@@ -1,22 +1,28 @@
 <template>
   <main class="main">
     <s-users-info />
+    <s-users-list :users="users" />
   </main>
 </template>
 
 <script>
-// import getUsers from '@/api/getUsers'
+import getUsers from '@/api/getUsers';
+
 export default {
   data() {
-    return {};
+    return {
+      users: [],
+    };
   },
-  // async asyncData({ $axios }) {
-  //   const usersData = await $axios.$get('https://jsonplaceholder.typicode.com/users');
-  //   console.log(usersData)
-  //   return { usersData };
-  // },
+  methods: {},
   async mounted() {
-    // getUsers()
+    await getUsers()
+      .then(async (response) => {
+        this.users = response;
+      })
+      .catch((e) => {
+        console.error('Произошла ошибка:', e);
+      });
   },
 };
 </script>

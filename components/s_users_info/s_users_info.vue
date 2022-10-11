@@ -1,6 +1,6 @@
 <template>
   <section class="s-users-info">
-    <h2 class="s-title">Пользователи</h2>
+    <h2 class="s-title">Lorem, ipsum dolor.</h2>
     <p>
       Lorem ipsum dolor, sit amet consectetur adipisicing elit. Amet consequatur beatae laborum. Aperiam dolores
       repellat laudantium a at vitae ex impedit doloremque ipsa, placeat assumenda temporibus atque hic veniam, in
@@ -13,10 +13,8 @@
 import './s_users_info.scss';
 
 export default {
-  name: 's-about-info',
-  components: {
-    // AButton,
-  },
+  name: 's-users-info',
+  components: {},
   data() {
     return {};
   },
